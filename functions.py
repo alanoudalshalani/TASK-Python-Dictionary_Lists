@@ -1,13 +1,11 @@
 from books import books
 
 print(books[0])
-#  number_of_authors(book)
+#number_of_authors(book)
 #  recieves a book dictionary
 #  returns the number of authors that the book has
 def number_of_authors(book):
-    ...
-
-
+        return (len(book["authors"]))
 print(number_of_authors(books[0]))
 
 #  get_book_by_id(book_id, books)
@@ -16,7 +14,6 @@ print(number_of_authors(books[0]))
 #  # returns the book dictionary with the same id as the book_id provided
 def get_book_by_id(book_id, books):
     ...
-
 
 print(get_book_by_id(38, books))
 
