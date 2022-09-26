@@ -13,7 +13,11 @@ print(number_of_authors(books[0]))
 #  # recieves a list of book dictionaries
 #  # returns the book dictionary with the same id as the book_id provided
 def get_book_by_id(book_id, books):
-    ...
+    finder_book=[]
+    for book in books:
+        if book_id == book["id"]:
+            finder_book.append(book)
+    return finder_book      
 
 print(get_book_by_id(38, books))
 
